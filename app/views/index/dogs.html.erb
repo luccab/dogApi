@@ -1,1 +1,25 @@
-<h2><%= image_tag @this %></h2>
+<%= stylesheet_link_tag "application", media: "all" %>
+
+<div class="form">
+  <%= form_tag root_path, :method => 'get' do %>
+<br><br><br>
+  <span>Select a Breed from the drop-down menu</span>
+<br>
+<br>
+  <%= select_tag 'breeds', options_for_select(
+    @list.map { |obj| [obj, obj] }
+     )%>
+     <br>
+     <br>
+     <br>
+<span>Now load a random image from that Breed!</span>
+<br><br><br>
+  <%= submit_tag "Load Random Image" %>
+  <% end %>
+</div>
+
+<div class="images">
+  <% if !@this.nil? %>]
+    <%= image_tag @this %>
+  <% end %>
+</div>
