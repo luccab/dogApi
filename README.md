@@ -1,12 +1,16 @@
-# README
+# Ruby on Rails Website
 
-## This code is hosted on Heroku
-https://holidog.herokuapp.com/
+This Website lets you choose a dog breed and then it generates a random image.
 
+Live Version: https://holidog.herokuapp.com/
 
-To start the app locally clone the branch 'local' (https://github.com/luccab/dogApi/tree/local) and then install the needed gems:
+## Gettting Started
+
+To start the app locally clone the repo and then install the needed gems:
 
 ```
+$ git clone https://github.com/luccabb/dogApi.git
+$ cd dogAPI
 $ bundle install --without production
 ```
 
@@ -15,6 +19,3 @@ Then run the server:
 ```
 $ rails server
 ```
-
-
-
